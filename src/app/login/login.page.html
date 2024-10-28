@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="containerMain">
+   
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Iniciar Sesión</h2>
+      
+      <form (ngSubmit)="login()">
+        <p-floatLabel>
+          <input id="username" type="text" pInputText [(ngModel)]="username" name="username" />
+          <label for="username">Username</label>
+        </p-floatLabel>
+        
+        <p-floatLabel>
+          <input id="password" type="password" pInputText [(ngModel)]="password" name="password" />
+          <label for="password">Password</label>
+        </p-floatLabel>
+        
+        <p-button label="" icon="pi pi-sign-in" type="submit"></p-button>
+      </form>
+      
+    </div>
+  </div>
+  </div>
+</ion-content>
